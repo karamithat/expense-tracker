@@ -1,5 +1,6 @@
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { Route } from 'react-router-dom';
+import Login from './components/Login';
 import SignUp from './components/SignUp';
 
 
@@ -23,6 +24,8 @@ function App() {
     <Content className="site-layout" style={{ padding: '50px', marginTop: 64 }}>
 
     <Route path="/register" component={SignUp} />
+    <Route path="/login" component={Login} />
+
     </Content>
     <Footer style={{ textAlign: 'center' }}>Expense Tracker ©2022 Created by Mithat Kara</Footer>
   </Layout>
